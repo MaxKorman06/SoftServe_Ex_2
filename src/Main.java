@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main
 {
-    public static class Product
+    static class Product
     {
         private String name;
         private double price;
@@ -29,14 +29,14 @@ public class Main
             return price;
         }
 
-        Product(String name, double  price)
+        public Product(String name, double  price)
         {
             this.name = name;
             this.price = price;
             ++counter;
         }
 
-        Product()
+        public Product()
         {
             this.name = "TEST";
             this.price = 0;
